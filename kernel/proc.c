@@ -168,6 +168,7 @@ freeproc(struct proc *p)
   p->killed = 0;
   p->xstate = 0;
   p->state = UNUSED;
+  p->trace_syscall = 0;
 }
 
 // Create a user page table for a given process, with no user memory,
@@ -274,6 +275,8 @@ kfork(void)
     return -1;
   }
   np->sz = p->sz;
+
+  np->trace_syscall = p->trace_syscall;
 
   // copy saved user registers.
   *(np->trapframe) = *(p->trapframe);
