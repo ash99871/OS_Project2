@@ -77,8 +77,10 @@ make qemu
 sh 
 ```
 --- 
-# Autoevaluación
+# Autoevaluación ash
 Aprendí más del automapeo de este sistema operativo y de como funcionan los procesos, llamadas, traps y paginación. No tengo conocimiento tan profundo del trace porque mi compañero lo desarrolló en su mayoría, mas comprendo su estructura y como funciona.
+#autoevaluacion SQ
+entendi como funionaban el trace y las llamadas al sistema, comprender el funcionamiento de xv6 como un semi sistema operativos y el rol de trace para ejecutar variedad de comandos individualmente
 
 --- 
 # Limitaciones conocidas 
